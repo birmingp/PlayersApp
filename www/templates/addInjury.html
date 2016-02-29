@@ -1,0 +1,42 @@
+<ion-view title="Add Injury">
+    <ion-content overflow-scroll="true" padding="true" class="has-header">
+        <div class="list card">
+            <div class="item item-divider">Injury Information</div>
+            <div class="item item-body">
+                <form class="list">
+                    <label class="item item-input" name="DOInjury">
+                        <span class="input-label">Date of occurence</span>
+                        <input type="date" placeholder="dd/mm/yy">
+                    </label>
+                </form>
+                <form class="list">
+                    <label class="item item-select">
+                        <span class="input-label">Injury type</span>
+                        <select>
+                            <option>Bruising</option>
+                            <option>Break/Fracture</option>
+                            <option>Head</option>
+                            <option>Muscle</option>
+                            <option>Ligament</option>
+                            <option>tendant</option>
+                            <option></option>
+                        </select>
+                    </label>
+                    <label class="item item-select">
+                        <span class="input-label">Injury Length</span>
+                        <select>
+                            <option>&lt; 1 week</option>
+                            <option>1-2 weeks</option>
+                            <option>2-3 weeks</option>
+                            <option>3-6 weeks</option>
+                            <option>2 Months</option>
+                            <option></option>
+                        </select>
+                    </label>
+                </form>
+            </div>
+        </div>
+        <form class="list"></form>
+        <a ui-sref="menu.playerProgress" class="button button-positive button-block ">Submit</a>
+    </ion-content>
+</ion-view>

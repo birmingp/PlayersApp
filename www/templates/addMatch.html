@@ -1,0 +1,74 @@
+<ion-view title="Add Match">
+    <ion-content overflow-scroll="true" padding="true" class="has-header">
+        <div class="list card">
+            <div class="item item-divider">Personal Involvement</div>
+            <div class="item item-body">
+                <form class="list">
+                    <label class="item item-select">
+                        <span class="input-label">Playing For</span>
+                        <select>
+                            <option>Primary Team</option>
+                            <option>Secondary Team</option>
+                        </select>
+                    </label>
+                    <label class="item item-select">
+                        <span class="input-label">Involved as</span>
+                        <select>
+                            <option>Starting XV</option>
+                            <option>Sub</option>
+                            <option>un-used sub</option>
+                            <option>Blood-bin replacement</option>
+                            <option>Head Assessment replacement</option>
+                        </select>
+                    </label>
+                    <label class="item item-input">
+                        <span class="input-label">Minutes Played</span>
+                        <input type="number" placeholder="">
+                    </label>
+                    <ion-toggle toggle-class="toggle-positive">Man Of the Match</ion-toggle>
+                    <label class="item item-input">
+                        <span class="input-label">Points Scored</span>
+                        <input type="number" placeholder="">
+                    </label>
+                </form>
+            </div>
+        </div>
+        <div class="list card">
+            <div class="item item-divider">Match Info</div>
+            <div class="item item-body">
+                <form class="list">
+                    <label class="item item-input" name="addGameDate">
+                        <span class="input-label">Date Played</span>
+                        <input type="date" placeholder="dd/mm/yy">
+                    </label>
+                    <label class="item item-input" name="addGameDate">
+                        <span class="input-label">Home Team</span>
+                        <input type="text" placeholder="e.g Old Belvedere">
+                    </label>
+                    <label class="item item-input" name="addGameDate">
+                        <span class="input-label">Away Team</span>
+                        <input type="text" placeholder="e.g Clontarf">
+                    </label>
+                    <label class="item item-input" name="addGameDate">
+                        <span class="input-label">Home Team Score</span>
+                        <input type="number" placeholder="e.g 22">
+                    </label>
+                    <label class="item item-input" name="addGameDate">
+                        <span class="input-label">Away Team Score</span>
+                        <input type="number" placeholder="e.g 22">
+                    </label>
+                    <label class="item item-select">
+                        <span class="input-label">Competition</span>
+                        <select>
+                            <option>League</option>
+                            <option>Cup</option>
+                            <option>Friendly</option>
+                        </select>
+                    </label>
+                </form>
+            </div>
+        </div>
+        <form class="list"></form>
+        <a ui-sref="menu.playerProgress" class="button button-positive button-block ">Submit</a>
+    </ion-content>
+</ion-view>
